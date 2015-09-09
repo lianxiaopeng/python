@@ -1,0 +1,15 @@
+use erp_2015;
+ALTER TABLE tbl_saleorderhead ADD isupdate_f TINYINT(4) NOT NULL DEFAULT '0' COMMENT '是否有修改单据 1为有，0为无'
+
+DROP TABLE IF EXISTS `tbl_saleorderheadupdatelog`;
+CREATE TABLE `tbl_saleorderheadupdatelog` (
+	`optuser_f` varchar(200) DEFAULT NULL,
+  `user_creater_f` smallint(5) NOT NULL DEFAULT '0',
+	`createdate_f` datetime DEFAULT NULL,
+	`saleorderhead_saleorderhead_f` VARCHAR(20) NOT NULL DEFAULT '0',
+	`updatecolum_f` varchar(200) DEFAULT NULL,
+	`beforevalue_f` varchar(200) DEFAULT NULL,
+	`aftervalue_f` varchar(200) DEFAULT NULL
+   
+  
+) ENGINE=InnoDB AUTO_INCREMENT=408 DEFAULT CHARSET=utf8;
