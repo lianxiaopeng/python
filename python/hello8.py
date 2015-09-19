@@ -16,7 +16,7 @@ def log(p1):
 			p1()
 			return 1
 		return log_f2
-	@functools.wraps(p1)
+	
 	def log_f3(*args):
 		print("log_f3")
 		print(args)
