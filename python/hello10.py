@@ -26,3 +26,10 @@ d = dir(types)
 print(d)
 print(type("") == str)
 print(type(1) == int)
+
+
+import types
+import functools
+t = dir(types)
+print(type(t))
+print(dir(functools))
