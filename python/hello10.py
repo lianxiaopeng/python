@@ -33,3 +33,6 @@ import functools
 t = dir(types)
 print(type(t))
 print(dir(functools))
+print(dir(types))
+print(type(""))
+print(type(1.1))
