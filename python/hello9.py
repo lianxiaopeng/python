@@ -11,3 +11,7 @@ int8 =  functools.partial(int,base=8)
 print(int8("71"))
 max10 = functools.partial(max,10)
 print(max10(5,6,7))
+def hello(**kwargs):
+    for key , values in kwargs.items():
+        print(key,values)
+hello(base = 3,dd=3,a33=3)

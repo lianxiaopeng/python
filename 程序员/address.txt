@@ -1,0 +1,11 @@
+http://www.csto.com/p/78492
+【入门】湖中鱼(283946467) 13:47:12
+本人精通流媒体、视频播放器加解密，求这块的活
+
+
+开发了一款桌面录屏与直播的软件 支持摄像头与桌面任意组合录制
+http://ieway.cn 下载地址
+
+伪流协议
+apache的modh264
+http://h264.code-shop.com/trac/wiki/Mod-H264-Streaming-Apache-Version2

@@ -7,7 +7,7 @@ def log(p1):
 	def log_f1(p1):
 		#print("log_f1")
 		#print(p1)
-		@functools.wraps(p1)
+		functools.wraps(p1)
 		def log_f2(*args):
 			print("log_f2")
 			print(args)
