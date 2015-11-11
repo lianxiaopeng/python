@@ -60,13 +60,13 @@ def get(path):
         return wrapper
     return decorator
         
-#@get("/api/tt")      
-def fn(request):
-    #for key , value in kw.items():
-    #    print(key)
-    #    print(value)
+@get("/api/tt")      
+def fn(**kw):
+    for key , value in kw.items():
+        print(key)
+        print(value)
     #return web.Response(body=b'<h1>index</h1>')
-    return "ssss";
+    return b'helloworld'
     
 #RequestHandler()(request) = RequestHandler()._func(xp=1) 
 # RequestHandler()._func = fn 
@@ -102,8 +102,7 @@ def init(loop):
     p = yield from create_pool(loop,host='172.16.2.23',user='root',password='root',db='erp_2015')
     app = web.Application(loop = loop,middlewares=[response_factory])
     
-    #add_route(app,fn)
-    app.router.add_route('get', '/',fn)
+    add_route(app,fn)
     srv = yield from loop.create_server(app.make_handler(),'127.0.0.1','9000')
     print(p)
     #user = User(id=10,name='lianxiaopeng')
