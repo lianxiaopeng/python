@@ -58,5 +58,5 @@ class Chain(object):
 		return self.param
 		
 		
-
+print(Chain("/ss/bb/cc"))
 print(Chain().status.user.timeline.lisddddt)

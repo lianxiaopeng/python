@@ -33,5 +33,10 @@ class Screen(object):
 s = Screen()
 s.width = 1024
 s.height = 768
+route = getattr(Screen.width, '__route__', None)
+print(set_score)
+print(dir(Screen.width))
+print(s.width)
+print(route)
 print(s.resolution)
 #assert s.resolution == 786432, '1024 * 768 = %d ?' % s.resolution
